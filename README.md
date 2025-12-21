@@ -1,103 +1,96 @@
 # Sales-and-Finance-Analysis-Report-Excel
 
-## Project Description
-
-This project analyzes **customer sales growth** and **market performance** using Microsoft Excel.
-It focuses on net sales trends, target achievement, and profitability metrics (COGS, Gross Margin) across multiple years and markets.
-
----
-
-## Table of Contents
-
-* [Project Description](#project-description)
-* [Overview](#overview)
-* [Business Problem](#business-problem)
-* [Tools & Technologies](#tools--technologies)
-* [Data Cleaning & Preparation](#data-cleaning--preparation)
-* [Project Structure](#project-structure)
-* [Key Findings](#key-findings)
-* [Report Highlights](#report-highlights)
-* [How to Use / Run This Project](#how-to-userun-this-project)
-* [Final Recommendations](#final-recommendations)
+Perfect choice 👍
+Below is a **GitHub-optimized README version** with **badges, visuals, internal links, and clean scannability**—ideal for recruiters and portfolio reviews.
+You can copy-paste this directly into your `README.md`.
 
 ---
 
-## Overview
+# 📊 Customer Sales & Market Performance Analytics
 
-This analysis provides insights into:
-
-* Customer-wise sales growth from **2019 to 2021**
-* Market performance against **2021 sales targets**
-* Profitability analysis by market (Net Sales, COGS, GM, GM%)
-* Yearly and quarterly sales and margin trends
-* **Top 10 Products** performance comparison (2021 vs 2020)
+![Excel](https://img.shields.io/badge/Tool-Microsoft%20Excel-green)
+![Power Query](https://img.shields.io/badge/Feature-Power%20Query-blue)
+![Power Pivot](https://img.shields.io/badge/Feature-Power%20Pivot-orange)
+![DAX](https://img.shields.io/badge/Language-DAX-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ---
 
-## Business Problem
+## 📌 Project Overview
 
-The project aims to:
+This project analyzes **customer sales growth** and **market performance** using **advanced Excel BI features**.
+It evaluates net sales trends, target achievement, and profitability metrics across **customers, markets, and products** from **2019–2021**.
 
-* Track **customer-level sales growth** and identify key contributors
-* Compare **market performance vs targets** to uncover gaps
-* Evaluate **profitability differences across markets**
-* Identify **fastest-growing products** to support future business strategy
+📈 Built to support **data-driven business decisions** through clear, actionable insights.
 
 ---
 
-## Tools & Technologies
+## 📂 Table of Contents
 
-**Microsoft Excel (Advanced BI Features)**
-
-* **Power Query** – Importing, cleaning, and transforming raw data
-* **Power Pivot** – Data modeling and handling large datasets
-* **Pivot Tables** – Summarizing customer, market, and product performance
-* **DAX Measures** – Created KPIs such as:
-
-  * Net Sales
-  * Gross Margin %
-  * YoY Growth %
-  * Target Achievement %
-* **Data Modeling** – Built relationships between Customer, Market, Product, Sales, and Date tables
-* **Date Table** – Extracted Year, Quarter, and Month for time-based analysis
+* [Business Problem](#-business-problem)
+* [Key Metrics & KPIs](#-key-metrics--kpis)
+* [Tools & Technologies](#-tools--technologies)
+* [Data Modeling](#-data-modeling)
+* [Project Structure](#-project-structure)
+* [Key Insights](#-key-insights)
+* [Report Snapshots](#-report-snapshots)
+* [How to Use This Project](#-how-to-use-this-project)
+* [Final Recommendations](#-final-recommendations)
 
 ---
 
-## Data Cleaning & Preparation
+## 🎯 Business Problem
 
-### Power Query
+The analysis aims to:
 
-* Removed duplicates and invalid records
-* Standardized data formats (Date, Currency, Percentage)
-* Created a Date Table with:
-
-  * Year
-  * Quarter
-  * Month
-
-### Power Pivot & Data Modeling
-
-* Established relationships:
-
-  * Customer ↔ Sales
-  * Market ↔ Sales
-  * Product ↔ Sales
-  * Date ↔ Sales
-* Designed a **star schema** for efficient reporting
-
-📷 *Data Model Screenshot available in the project folder*
-
-### DAX Measures
-
-* Net Sales
-* Target Achievement %
-* COGS
-* Gross Margin & GM%
-* YoY Comparison (2021 vs 2020)
+* Identify **top-growing customers** and revenue drivers
+* Measure **market performance vs targets**
+* Compare **profitability across regions**
+* Highlight **fastest-growing products** for strategic investment
 
 ---
 
-## Project Structure
+## 📌 Key Metrics & KPIs
+
+* **Net Sales**
+* **Gross Margin (GM) & GM%**
+* **COGS**
+* **YoY Growth %**
+* **Target Achievement %**
+* **Quarterly & Yearly Trends**
+
+---
+
+## 🛠 Tools & Technologies
+
+| Tool                | Purpose                         |
+| ------------------- | ------------------------------- |
+| **Microsoft Excel** | End-to-end analysis & reporting |
+| **Power Query**     | Data cleaning & transformation  |
+| **Power Pivot**     | Data modeling & relationships   |
+| **Pivot Tables**    | Aggregation & slicing           |
+| **DAX**             | KPI calculations                |
+| **Date Table**      | Time-intelligence analysis      |
+
+---
+
+## 🧩 Data Modeling
+
+* Star schema design
+* Fact table: `fact_sales_monthly`
+* Dimension tables:
+
+  * Customer
+  * Market
+  * Product
+  * Date
+
+📷 **Data Model Screenshot**
+![Data Model](Data_Model_Screenshot.png)
+
+---
+
+## 📁 Project Structure
 
 ```
 Customer-Sales-Market-Performance/
@@ -115,56 +108,84 @@ Customer-Sales-Market-Performance/
 
 ---
 
-## Key Findings
+## 🔍 Key Insights
 
-* **Customer Growth:** Major customers such as *AtliQ eStore, Acclaimed Store, Amazon, AtliQ Exclusive, Flipkart,* and *BestBuy* showed strong growth from 2019–2021.
-* **Market Targets:** Several markets missed their 2021 targets, resulting in an overall shortfall of approximately **9%**.
-* **Profitability:**
+### 📈 Sales Growth
 
-  * High-margin markets: *Japan (46.5% GM)*, *New Zealand (48.2% GM)*
-  * Low-margin market: *Germany (26.2% GM)*
-* **Sales Trend:** Net Sales increased significantly:
+* Net Sales grew rapidly:
 
-  * **$87.5M (2019) → $196.7M (2020) → $598.9M (2021)**
-* **Top 10 Products (2021 vs 2020):**
+  * **$87.5M (2019)**
+  * **$196.7M (2020)**
+  * **$598.9M (2021)**
 
-  * *AQ Mx NB* (+5723%), *AQ Smash 2* (+2589%), *AQ LION X Series* (1700%+)
-  * Overall Top 10 products achieved **808% YoY growth**, driving major revenue in 2021
+### 👥 Customer Performance
+
+* Strong growth from:
+
+  * *AtliQ eStore*
+  * *Amazon*
+  * *Flipkart*
+  * *BestBuy*
+  * *AtliQ Exclusive*
+
+### 🌍 Market Performance
+
+* Overall **~9% gap** vs 2021 sales targets
+* High-margin markets:
+
+  * **New Zealand (48.2% GM)**
+  * **Japan (46.5% GM)**
+* Low-margin market:
+
+  * **Germany (26.2% GM)**
+
+### 🚀 Product Growth (2021 vs 2020)
+
+* *AQ Mx NB* → **+5723%**
+* *AQ Smash 2* → **+2589%**
+* *AQ LION X Series* → **1700%+**
+* **Top 10 products delivered 808% YoY growth**
 
 ---
 
-## Report Highlights
+## 📑 Report Snapshots
 
-* **Customer Net Sales Report (2019–2021)** – Customer-wise growth analysis
-* **Market Performance vs Target (2021)** – Actual vs target comparison
-* **P&L by Market** – Net Sales, COGS, and Gross Margin %
-* **P&L by Fiscal Year** – Yearly and quarterly trends
-* **Top 10 Products (2021 vs 2020)** – Product-level YoY growth
+| Report                 | Description                      |
+| ---------------------- | -------------------------------- |
+| **Customer Net Sales** | Customer-wise growth (2019–2021) |
+| **Market vs Target**   | Actual vs target analysis        |
+| **P&L by Market**      | Profitability comparison         |
+| **P&L by Fiscal Year** | Yearly & quarterly trends        |
+| **Top 10 Products**    | Fastest-growing products         |
 
----
-
-## How to Use/Run This Project
-
-1. Open the **Reports** folder
-2. Review the PDFs in the following order:
-
-   * *Customer_Net_Sales_Performance.pdf* → Customer growth
-   * *Market Performance vs Target.pdf* → Market gap analysis
-   * *P & L For Markets.pdf* → Market profitability
-   * *P & L by Fiscal Year 1.pdf* → Sales trends
-   * *Top 10 Products.pdf* → Product YoY growth
+📂 Access all reports here → [`Reports/`](Reports)
 
 ---
 
-## Final Recommendations
+## ▶️ How to Use This Project
 
-* Focus on **top-performing customers** such as Amazon and AtliQ Exclusive
-* Analyze **missed targets** in large markets (USA, India, Canada)
-* Replicate strategies from **high-margin markets** like Japan and New Zealand
-* Improve performance in **low-margin markets** such as Germany and Norway
-* Invest further in **high-growth products** (AQ Mx NB, Smash 2, LION Series)
-* Monitor customer, market, and product performance **quarterly** for better decision-making
+1. Navigate to the **Reports** folder
+2. Review PDFs in the following order:
 
+   * Customer Net Sales Performance
+   * Market Performance vs Target
+   * P&L for Markets
+   * P&L by Fiscal Year
+   * Top 10 Products
 
+---
+
+## ✅ Final Recommendations
+
+* Double down on **high-value customers** like Amazon & AtliQ Exclusive
+* Address **target gaps** in large markets (USA, India, Canada)
+* Replicate **high-margin strategies** from Japan & New Zealand
+* Improve margins in **underperforming markets** (Germany, Norway)
+* Invest further in **high-growth products** to sustain momentum
+* Track performance **quarterly** for proactive decision-making
+
+---
+
+### ⭐ If you find this project useful, consider giving it a star!
 
 
