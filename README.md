@@ -86,7 +86,7 @@ The analysis aims to:
   * Date
 
 📷 **Data Model Screenshot**
-![Data Model](Data_Model_Screenshot.png)
+Data_Model_Screenshot.png
 
 ---
 
