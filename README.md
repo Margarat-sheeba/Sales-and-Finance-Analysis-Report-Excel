@@ -1,11 +1,3 @@
-# Sales-and-Finance-Analysis-Report-Excel
-
-Perfect choice 👍
-Below is a **GitHub-optimized README version** with **badges, visuals, internal links, and clean scannability**—ideal for recruiters and portfolio reviews.
-You can copy-paste this directly into your `README.md`.
-
----
-
 # 📊 Customer Sales & Market Performance Analytics
 
 ![Excel](https://img.shields.io/badge/Tool-Microsoft%20Excel-green)
@@ -86,7 +78,8 @@ The analysis aims to:
   * Date
 
 📷 **Data Model Screenshot**
-![Data Model](Data_Model_Screenshot.png)
+![Data Model](data-model-screenshot.png)
+
 
 ---
 
